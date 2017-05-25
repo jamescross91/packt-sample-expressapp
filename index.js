@@ -11,17 +11,17 @@ const getParams = {
 app.get('/', function (req, res) {
   s3.getObject(getParams, function(err, data) {
     // Handle any error and exit
-      if (err)
+    if (err)
         return err;
 
-      var objectData = data.Body.toString('utf-8'); 
+    var objectData = data.Body.toString('utf-8'); 
       res.send(objectData);// Use the encoding necessary
     });
 })
 
-var server = app.listen(8081, function () {
-   var host = server.address().address
-   var port = server.address().port
+let server = app.listen(8081, function () {
+   let host = server.address().address
+   let port = server.address().port
    
    console.log("Example app listening at http://%s:%s", host, port)
 })
