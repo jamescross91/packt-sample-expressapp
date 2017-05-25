@@ -1,0 +1,23 @@
+{
+  "name": "packt-sample-expressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamescross91/packt-sample-expressapp.git"
+  },
+  "author": "James Cross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamescross91/packt-sample-expressapp/issues"
+  },
+  "homepage": "https://github.com/jamescross91/packt-sample-expressapp#readme",
+  "dependencies": {
+    "aws-sdk": "^2.57.0",
+    "express": "^4.15.3"
+  }
+}
